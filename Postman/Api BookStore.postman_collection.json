@@ -1,0 +1,350 @@
+{
+  "info": {
+    "_postman_id": "19307973-0baf-4dae-899c-77e31d82db83",
+    "name": "Api BookStore",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "39552121"
+  },
+  "item": [
+    {
+      "name": "Usuario",
+      "item": [
+        {
+          "name": "CrearUsuario",
+          "request": {
+            "method": "POST",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "ObtenerUsuarioAdmin",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "ObtenerUsuariosAdmin",
+          "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": [
+                {
+                  "key": "clientId",
+                  "value": "",
+                  "type": "string"
+                },
+                {
+                  "key": "clientSecret",
+                  "value": "",
+                  "type": "string"
+                },
+                {
+                  "key": "scope",
+                  "value": "openid email profile",
+                  "type": "string"
+                },
+                {
+                  "key": "useBrowser",
+                  "value": true,
+                  "type": "boolean"
+                },
+                {
+                  "key": "state",
+                  "value": "",
+                  "type": "string"
+                },
+                {
+                  "key": "redirect_uri",
+                  "value": "\n\n",
+                  "type": "string"
+                },
+                {
+                  "key": "authUrl",
+                  "value": "https://accounts.google.com/o/oauth2/v2/auth",
+                  "type": "string"
+                },
+                {
+                  "key": "refreshTokenUrl",
+                  "value": "https://oauth2.googleapis.com/token\n",
+                  "type": "string"
+                },
+                {
+                  "key": "accessTokenUrl",
+                  "value": "\thttps://oauth2.googleapis.com/token",
+                  "type": "string"
+                },
+                {
+                  "key": "tokenName",
+                  "value": "googleToken",
+                  "type": "string"
+                },
+                {
+                  "key": "addTokenTo",
+                  "value": "header",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/bookStore/api/v1/usuario/obtenerUsuarios",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "bookStore",
+                "api",
+                "v1",
+                "usuario",
+                "obtenerUsuarios"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "EditarUsuarioAdmin",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\":\"María\",\r\n    \"apellido\":\"Martinéz\",\r\n    \"email\":\"maria.gonzalez@gamil.com\",\r\n    \"num_celular\":\"3213458699\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/bookStore/api/v1/usuario/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "bookStore",
+                "api",
+                "v1",
+                "usuario",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "EliminarUsuarioAdmin",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/bookStore/api/v1/usuario/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "bookStore",
+                "api",
+                "v1",
+                "usuario",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Compra",
+      "item": [
+        {
+          "name": "CrearCompra",
+          "request": {
+            "method": "POST",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "ObtenerComprasAdmin",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "ObtenerComprasUser",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "ObtenerCompraAdmin",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "ObtenerCompraUser",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/bookStore/api/v1/compra/user/obtenerCompra/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "bookStore",
+                "api",
+                "v1",
+                "compra",
+                "user",
+                "obtenerCompra",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Libro",
+      "item": [
+        {
+          "name": "CrearLibroAdmin",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/bookStore/api/v1/libro",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "bookStore",
+                "api",
+                "v1",
+                "libro"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ObtenerLibrosAdmin/User",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "ObtenerLibroAdmin/User",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "EditarLibroAdmin",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"titulo\": \"Orgullo y prejuicio\",\r\n    \"autor\": \"Jane Austen\",\r\n    \"fecha_publicacion\": \"1813\",\r\n    \"copias_disponibles\": 8,\r\n    \"estado\": \"En Stock\",\r\n    \"precio_copia\": 14.85\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/bookStore/api/v1/libro/4",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "bookStore",
+                "api",
+                "v1",
+                "libro",
+                "4"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "EliminarLibroAdmin",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/bookStore/api/v1/libro/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "bookStore",
+                "api",
+                "v1",
+                "libro",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "ClienteID",
+      "value": "",
+      "type": "default"
+    },
+    {
+      "key": "ClienteSecret",
+      "value": "",
+      "type": "default"
+    }
+  ]
+}
