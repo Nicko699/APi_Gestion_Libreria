@@ -1,0 +1,16 @@
+package org.bookstore;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.web.config.EnableSpringDataWebSupport;
+
+@Configuration
+@EnableSpringDataWebSupport(pageSerializationMode = EnableSpringDataWebSupport.PageSerializationMode.VIA_DTO)
+@SpringBootApplication
+public class BookStoreApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(BookStoreApplication.class, args);
+    }
+
+}
