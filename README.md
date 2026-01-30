@@ -1,6 +1,6 @@
 <div>
 
-# 📚 BookStore API
+# 📚 API Gestion de librería
 
  Es una API REST robusta y escalable desarrollada con **Java 17** y **Spring Boot 3**, diseñada para gestionar de manera eficiente el inventario, usuarios y transacciones de una librería moderna.
 
